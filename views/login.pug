@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    title login page 
+    //- link(rel='stylesheet', href=`./style.css`)
+    style 
+        include ./style.css
+  
+  body
+    div.login-form
+        h1 Login
+        div.form
+            form(action='/login', method='POST')
+                .user 
+                    label(for='username' class='user') Username :
+                    input(type="text", id="username" class="username" name="username")
+
+                .email  
+                    label(for="email") Email 
+                    input(type="email", id="email" class="email" name="email")
+                .password 
+                    label(for="password") Password 
+                    input(type="password", id="password" class="password" name="password")
+                .btn 
+                    button(type='submit') Login 
+                 
+
+
+
